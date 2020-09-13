@@ -14,7 +14,7 @@ const Router = () => {
         <BrowserRouter>
             <Switch>
                 <Route path="/detail/:id" component={Detail} />
-                <Route path="/" component={List} />
+                <Route exact path="/" component={List} />
                 <Route component={NotFound} />
             </Switch>
         </BrowserRouter>
