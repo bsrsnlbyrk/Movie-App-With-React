@@ -1,0 +1,23 @@
+.list-container {
+    padding: 2rem 2rem;
+}
+.search-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+.search-wrapper .search-input {
+    width: 70%;
+}
+.search-wrapper .year-filter {
+    width: 20%;
+}
+.movies-table .table tbody > tr {
+    cursor: pointer;
+}
+.pagination-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+.pagination-wrapper .page-link {
+    color: black;
+}
