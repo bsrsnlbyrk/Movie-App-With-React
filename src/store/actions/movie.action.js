@@ -5,7 +5,7 @@ export const getMovie = (searchValue, year, type, page) => async (dispatch, getS
 
     try {
         dispatch({ type: movieTypes.GET_MOVIE_PENDING });
-        const res = await Axios.get(`http://www.omdbapi.com/`,
+        const res = await Axios.get(`https://www.omdbapi.com/`,
             {
                 params: {
                     s: searchValue,
@@ -32,7 +32,7 @@ export const getMovieDetail = (movieId) => async (dispatch, getState) => {
     try {
         dispatch({ type: movieTypes.GET_MOVIE_DETAIL_PENDING });
 
-        const res = await Axios.get('http://www.omdbapi.com', {
+        const res = await Axios.get('https://www.omdbapi.com', {
             params: {
                 i: movieId,
                 apikey: process.env.REACT_APP_API_KEY
