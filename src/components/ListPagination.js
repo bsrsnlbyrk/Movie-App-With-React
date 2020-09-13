@@ -35,7 +35,7 @@ export const ListPagination = ({ resultsNumber, currentPage, setPageNumber }) =>
                             <li key="last-page" className="page-item"><button onClick={() => setPageNumber(pageNumber)} className="page-link">{pageNumber}</button></li>
                         </React.Fragment>
                         : pages.map(page =>
-                            <li key={page} className="page-item"><button onClick={() => setPageNumber(page)} className="page-link"></button>{page}</li>
+                            <li key={page} className="page-item"><button onClick={() => setPageNumber(page)} className="page-link">{page}</button></li>
                         )
                     }
                     <li className="page-item">
